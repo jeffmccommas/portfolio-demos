@@ -1,0 +1,37 @@
+<!doctype html>
+    <html>
+    <head>
+        <title>jQuery: Placing Random Elements</title>
+        <meta charset="utf-8">
+        <style>
+            div {
+                position: absolute;
+                background-color: lightblue;
+                opacity: .5;
+                width: 100px;
+                height: 100px;
+                box-shadow: 3px 3px 5px gray;
+            }
+        </style>
+
+    </head>
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script>
+        function getRandomInt (min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        $(function() {
+            var maxWidth = parseInt($(window).width() - 100);
+            var maxHeight = parseInt($(window).height() - 100);
+            var html = '';
+            for (var i = 0; i < 100; i++) {
+                html += '<div id="div" style="top:'+getRandomInt(0,maxHeight)+'px;left:'+getRandomInt(0,maxWidth)+'px" class="div"></div>';
+            }
+            $('body').append(html);
+        });
+
+    </script>
+    <body>
+    </body>
+    </html>
