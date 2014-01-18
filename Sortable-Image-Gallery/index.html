@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Sortable Photo Gallery</title>
+        <meta id="viewport"  name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css"/>
+        <link rel="stylesheet" href="includes/sortable_gallery.css"/>
+	</head>
+	<body>
+		
+		<!-- content goes here -->
+        <!--<img src="images/background.jpg" alt=""/>-->
+
+        <div class="title"></div>
+        <div class="gallery">
+            <div class="sorting">
+                <div>
+                    <span>Filter photos by</span>
+                    <a class="sortLink selected" data-keywords="all" href="#">All Categories</a>
+                    <a class="sortLink" data-keywords="plants" href="#">Plants</a>
+                    <a class="sortLink" data-keywords="sculpture" href="#">Sculpture</a>
+                    <a class="sortLink" data-keywords="architecture" href="#">Architecture</a>
+                    <a class="sortLink" data-keywords="winter" href="#">Winter</a>
+                    <div class="clear_both"></div>
+                </div>
+            </div>
+            <div class="photos">
+                <div class="thumbnail_container">
+                    <a class="thumbnail" title="This is an Image Caption" href="images/sculpture_fullsize.jpg" data-keywords="plants"><img src="images/berrytree_thumbnail.jpg" /></a>
+                    <a class="thumbnail" title="This is an Image Caption" href="images/sculpture_thumbnail.jpg" data-keywords="sculpture winter"><img src="images/berrytree_thumbnail.jpg" /></a>
+                    <a class="thumbnail" title="This is a caption for carousel_fullsize." href="images/carousel_fullsize.jpg" data-keywords="sculpture"><img src="images/carousel_thumbnail.jpg"/></a>
+                    <a class="thumbnail" title="This is a caption for redplant_fullsize." href="images/redplant_fullsize.jpg" data-keywords="plants"><img src="images/redplant_thumbnail.jpg"/></a>
+                    <a class="thumbnail" title="This is a caption for eighteighteight_fullsize." href="images/eighteighteight_fullsize.jpg" data-keywords="sculpture"><img src="images/eighteighteight_thumbnail.jpg"/></a>
+                    <a class="thumbnail" title="This is a caption for evergreens_fullsize." href="images/evergreens_fullsize.jpg" data-keywords="plants winter"><img src="images/evergreens_thumbnail.jpg"/></a>
+                    <a class="thumbnail" title="This is a caption for fish_fullsize." href="images/fish_fullsize.jpg" data-keywords="sculpure"><img src="images/fish_thumbnail.jpg"/></a>
+                    <a class="thumbnail" title="This is a caption for lantern_fullsize." href="images/lantern_fullsize.jpg" data-keywords="architecture"><img src="images/lantern_thumbnail.jpg"/></a>
+                    <a class="thumbnail" title="This is a caption for pinwheel_fullsize." href="images/pinwheel_fullsize.jpg" data-keywords="sculpture"><img src="images/pinwheel_thumbnail.jpg"/></a>
+                    <a class="thumbnail" title="This is a caption for breckenridge_fullsize." href="images/breckenridge_fullsize.jpg" data-keywords="winter plants"><img src="images/breckenridge_thumbnail.jpg"/></a>
+                    <a class="thumbnail" title="This is a caption for neptune_fullsize." href="images/neptune_fullsize.jpg" data-keywords="sculpture"><img src="images/neptune_thumbnail.jpg"/></a>
+                    <a class="thumbnail" title="This is a caption for pumpkins_fullsize." href="images/pumpkins_fullsize.jpg" data-keywords="plants"><img src="images/pumpkins_thumbnail.jpg"/></a>
+                    <a class="thumbnail" title="This is a caption for snowbranch_fullsize." href="images/snowbranch_fullsize.jpg" data-keywords="winter"><img src="images/snowbranch_thumbnail.jpg"/></a>
+                    <a class="thumbnail" title="This is a caption for refraction_fullsize." href="images/refraction_fullsize.jpg" data-keywords="sculpture"><img src="images/refraction_thumbnail.jpg"/></a>
+                    <a class="thumbnail" title="This is a caption for rose_fullsize." href="images/rose_fullsize.jpg" data-keywords="plants"><img src="images/rose_thumbnail.jpg"/></a>
+                    <a class="thumbnail" title="This is a caption for sculpture_fullsize." href="images/sculpture_fullsize.jpg" data-keywords="scuplture winter"><img src="images/sculpture_thumbnail.jpg"/></a>
+                    <a class="thumbnail" title="This is a caption for stowe_fullsize." href="images/stowe_fullsize.jpg" data-keywords="architecture winter"><img src="images/stowe_thumbnail.jpg"/></a>
+                    <a class="thumbnail" title="This is a caption for nutcracker_fullsize." href="images/nutcracker_fullsize.jpg" data-keywords="sculpture winter"><img src="images/nutcracker_thumbnail.jpg"/></a>
+                    <a class="thumbnail" title="This is a caption for swatches_fullsize." href="images/swatches_fullsize.jpg" data-keywords="sculpture"><img src="images/swatches_thumbnail.jpg"/></a>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src=" http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+        <script src="includes/sortable_gallery.js"></script>
+		
+	</body>
+</html>
